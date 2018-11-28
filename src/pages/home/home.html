@@ -1,0 +1,39 @@
+<ion-header>
+    <ion-toolbar>
+    
+      <ion-title>Registrarse</ion-title>
+      <ion-buttons end>
+        <button ion-button icon-only color="royal"(click)= "clickAgregar()">
+          <ion-icon name="person-add" ></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  
+<ion-content padding>
+
+    <ion-list>
+        <ion-item-sliding *ngFor="let Correo of Correos">
+    
+          <ion-item>
+              <ion-card >
+                  <ion-card-header>
+                    {{Correo.Correos}}
+                  </ion-card-header>
+                  <ion-card-content>
+                    
+                  </ion-card-content>
+                </ion-card>
+          </ion-item>
+    
+          
+    
+        </ion-item-sliding>
+      </ion-list>
+    
+    
+      
+
+
+    
+</ion-content>
